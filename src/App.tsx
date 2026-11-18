@@ -13,6 +13,9 @@ function Wrap({ children }: { children: React.ReactNode }) {
 }
 
 const SITE = "https://www.republicmarketing.co.uk/"
+const LONDON = "https://www.republicmarketing.co.uk/web-design-london"
+const BIRMINGHAM = "https://www.republicmarketing.co.uk/web-design-birmingham"
+const A = "text-[#0b1424] underline decoration-black/25 underline-offset-4"
 
 export default function App() {
   return (
@@ -43,10 +46,18 @@ export default function App() {
             <p>
               Heroes, galleries, testimonials and feature blocks built with React, Tailwind CSS and Motion, with original photography in every demo.
               Open source under MIT. Made by the team at{" "}
-              <a href={SITE} className="text-[#0b1424] underline decoration-black/25 underline-offset-4">
+              <a href={SITE} className={A}>
                 Republic Marketing
               </a>
-              , a web design agency in London and Birmingham.
+              , a{" "}
+              <a href={LONDON} className={A}>
+                web design agency in London
+              </a>{" "}
+              and{" "}
+              <a href={BIRMINGHAM} className={A}>
+                Birmingham
+              </a>
+              .
             </p>
           </div>
         </div>
@@ -108,16 +119,28 @@ npx shadcn@latest add @republic/fan-gallery`}</pre>
 
       <BlocksSections start={6} />
 
-      <footer className="mx-auto mt-10 flex max-w-[1312px] flex-col gap-3 border-t border-black/10 px-6 py-12 text-[15px] text-black/55 md:flex-row md:justify-between md:px-10">
-        <p>
-          Republic UI is free and open source under the MIT licence. Photos are original and free to use with these components.
-        </p>
-        <p>
-          Built by{" "}
-          <a href={SITE} className="text-[#0b1424] underline decoration-black/25 underline-offset-4">
-            Republic Marketing
-          </a>
-        </p>
+      <footer className="mx-auto mt-10 max-w-[1312px] border-t border-black/10 px-6 py-12 text-[15px] leading-relaxed text-black/55 md:px-10">
+        <div className="grid gap-8 md:grid-cols-2">
+          <p>
+            Want a whole site built with this level of craft? Republic Marketing designs and builds websites for growing companies. See our{" "}
+            <a href={LONDON} className={A}>
+              web design in London
+            </a>{" "}
+            and{" "}
+            <a href={BIRMINGHAM} className={A}>
+              web design in Birmingham
+            </a>
+            .
+          </p>
+          <p className="md:text-right">
+            Republic UI is free and open source under the MIT licence. Photos are original and free to use with these components.
+            <br />
+            Built by{" "}
+            <a href={SITE} className={A}>
+              Republic Marketing
+            </a>
+          </p>
+        </div>
       </footer>
     </main>
   )
