@@ -35,6 +35,6 @@ npm run build        # showcase + registry into dist/
 
 ## Licence
 
-MIT. The photos in `public/img` are original and free to use with these components.
+MIT. The images in `public/img` are original and free to use with these components.
 
 Made by [Republic Marketing](https://www.republicmarketing.co.uk/), a web design agency in London and Birmingham.

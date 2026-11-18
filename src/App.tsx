@@ -44,7 +44,7 @@ export default function App() {
           </div>
           <div className="text-[16px] leading-relaxed text-black/65">
             <p>
-              Heroes, galleries, testimonials and feature blocks built with React, Tailwind CSS and Motion, with original photography in every demo.
+              Heroes, galleries, testimonials and feature blocks built with React, Tailwind CSS and Motion, with original images in every demo.
               Open source under MIT. Made by the team at{" "}
               <a href={SITE} className={A}>
                 Republic Marketing
@@ -133,7 +133,7 @@ npx shadcn@latest add @republic/fan-gallery`}</pre>
             .
           </p>
           <p className="md:text-right">
-            Republic UI is free and open source under the MIT licence. Photos are original and free to use with these components.
+            Republic UI is free and open source under the MIT licence. The demo images are original and free to use with these components.
             <br />
             Built by{" "}
             <a href={SITE} className={A}>
